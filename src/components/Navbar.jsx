@@ -1,25 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../assets/logo.png'
 
+
 function Navbar() {
-  return (
-    <>
-   
-    <div className="w-[100%] h-18 items-center bg-[linear-gradient(120deg,_#030B1C,_#071A36,_#0B2D55)] flex ">
-        <img className="w-20 h-12" src={logo} alt="" />
-        <div className="flex justify-end w-[100%] items-center pr-10">
-            <ul className="text-white flex justify-between gap-10">
-                <li className=" box-border hover:border-2 border-solid rounded-full transition-all ease-in  px-3 py-1">Home</li>
-                <li className="box-border hover:border-2 border-solid rounded-full transition-all ease-in  px-3 py-1">About Me</li>
-                <li className="box-border hover:border-2 border-solid rounded-full transition-all ease-in  px-3 py-1">Skills</li>
-                <li className="box-border hover:border-2 border-solid rounded-full transition-all ease-in  px-3 py-1">Projects</li>
-                <li className="box-border hover:border-2 border-solid rounded-full transition-all ease-in  px-3 py-1">Contact</li>
-            </ul>
-        </div>
-    </div>
-    </>  
-  );
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    function handleMenu() {
+        setMenuOpen(!menuOpen)
+    }
+
+    return (
+        <>
+
+            <div className="w-full h-18 items-center bg-[linear-gradient(120deg,#030B1C,#071A36,#0B2D55)] flex relative ">
+                <img className="w-20 h-12" src={logo} alt="" />
+
+                <div className="text-white md:hidden absolute right-5 cursor-pointer" onClick={() => { handleMenu() }}>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                    >
+                        {menuOpen ? (
+                            <path d="M18 6L6 18M6 6l12 12" />
+                        ) : (
+                            <path d="M3 6h18M3 12h18M3 18h18" />
+                        )}
+                    </svg>
+                </div>
+
+                <div className=" justify-end w-full items-center pr-10 hidden md:flex ">
+                    <ul className="box-border text-white flex justify-between gap-10">
+                        <li className="nav-links">Home</li>
+                        <li className="nav-links">About Me</li>
+                        <li className="nav-links">Skills</li>
+                        <li className="nav-links">Projects</li>
+                        <li className="nav-links">Contact</li>
+                    </ul>
+                </div>
+            </div>
+
+            {menuOpen && (
+               <div className="absolute right-0 h-full w-40 md:hidden">
+                <ul className="text-white mt-5 flex flex-col gap-3 ">
+                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Home</li>
+                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>About Me</li>
+                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Skills</li>
+                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Projects</li>
+                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Contact</li>
+                    </ul>
+               </div>
+            )}
+        </>
+    );
 }
-//[#0B2D55]
+
 
 export default Navbar
