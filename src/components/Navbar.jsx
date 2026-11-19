@@ -46,7 +46,7 @@ function Navbar() {
             </div>
 
             {menuOpen && (
-               <div className="absolute right-0 h-full w-40 md:hidden">
+               <div className="absolute right-0 h-full w-30 md:hidden">
                 <ul className="text-white mt-5 flex flex-col gap-3 ">
                         <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Home</li>
                         <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>About Me</li>
