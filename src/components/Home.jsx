@@ -32,14 +32,14 @@ function Home() {
                         <button
                             type="button"
                             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="rounded-full border border-[#38BDF8]/30 bg-[#0B2D55] px-5 py-3 text-sm font-semibold transition-colors hover:bg-[#123D6D] sm:w-auto sm:text-base"
+                            className="rounded-full border border-[#38BDF8]/30 bg-[#0B2D55] text-center px-5 py-3 text-sm font-semibold transition-colors hover:bg-[#123D6D] sm:w-auto sm:text-base"
                         >
                             Explore My Projects
                         </button>
                         <button
                             type="button"
                             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold transition-colors hover:border-white/50 hover:bg-white/10 sm:w-auto sm:text-base"
+                            className="rounded-full border border-white/20 text-center px-5 py-3 text-sm font-semibold transition-colors hover:border-white/50 hover:bg-white/10 sm:w-auto sm:text-base"
                         >
                             Contact
                         </button>

@@ -15,8 +15,11 @@ function App() {
 
       <Navbar />
       <Home />
+       <hr className="my-5 text-white" />
       <AboutMe />
+       <hr className="my-10 text-white" />
       <Projects />
+       <hr className="my-10 text-white" />
       <Contact />
 
 
