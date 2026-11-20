@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <>
 
-            <div className=" w-full h-18 items-center bg-[linear-gradient(120deg,#030B1C,#071A36,#0B2D55)] flex relative ">
+            <div className="w-full h-18 items-center bg-[linear-gradient(120deg,#030B1C,#071A36,#0B2D55)] flex relative ">
                 <img className="w-20 h-12" src={logo} alt="" />
 
                 <div className="text-white md:hidden absolute right-5 cursor-pointer" onClick={() => { handleMenu() }}>
