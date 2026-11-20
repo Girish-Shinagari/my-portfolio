@@ -1,16 +1,100 @@
-# React + Vite
+# Girish Shinagari — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website for showcasing my projects, technical skills, education, and contact information.
 
-Currently, two official plugins are available:
+## Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navigation with a mobile menu
+- Smooth section navigation
+- Animated hero introduction
+- About and education section
+- Featured projects section
+- Contact details and Netlify-enabled contact form
+- Modern, mobile-first design
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript (ES6)
+- HTML5
+- Tailwind CSS
+- Vite
+- Typewriter Effect
 
-## Expanding the ESLint configuration
+## Featured Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### myMovie
+
+A responsive movie discovery application that lets users search movies, explore trending titles, and view ratings and synopses.
+
+- **Live Demo:** https://my-movies-lyart.vercel.app
+- **Source Code:** https://github.com/Girish-Shinagari/myMovies
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or later
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/Girish-Shinagari/my-portfolio.git
+cd my-portfolio
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open the local URL shown by Vite in your browser.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+### Preview the Production Build
+
+```bash
+npm run preview
+```
+
+### Run Lint Checks
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── AboutMe.jsx
+│   ├── Contact.jsx
+│   ├── Home.jsx
+│   ├── Navbar.jsx
+│   └── Projects.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+## Contact
+
+- **GitHub:** https://github.com/Girish-Shinagari
+- **LinkedIn:** https://www.linkedin.com/in/girish-shinagari
+- **Email:** girishshinagari91@gmail.com
+- **Location:** Dharwad, Karnataka
+
+## License
+
+This project is available for personal portfolio use.
