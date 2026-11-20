@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <>
 
-            <div className="w-full h-18 items-center bg-[linear-gradient(120deg,#030B1C,#071A36,#0B2D55)] flex relative ">
+            <div className=" w-full h-18 items-center bg-[linear-gradient(120deg,#030B1C,#071A36,#0B2D55)] flex relative ">
                 <img className="w-20 h-12" src={logo} alt="" />
 
                 <div className="text-white md:hidden absolute right-5 cursor-pointer" onClick={() => { handleMenu() }}>
@@ -36,25 +36,42 @@ function Navbar() {
 
                 <div className=" justify-end w-full items-center pr-10 hidden md:flex ">
                     <ul className="box-border text-white flex justify-between gap-10">
-                        <li className="nav-links">Home</li>
-                        <li className="nav-links">About Me</li>
-                        <li className="nav-links">Skills</li>
-                        <li className="nav-links">Projects</li>
-                        <li className="nav-links">Contact</li>
+                        <li className="nav-links" onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}>Home</li>
+                        <li className="nav-links" onClick={() => document.getElementById('aboutme')?.scrollIntoView({ behavior: 'smooth' })}>About Me</li>
+
+                        <li className="nav-links" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>Projects</li>
+                        <li className="nav-links" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contact</li>
                     </ul>
                 </div>
             </div>
 
             {menuOpen && (
-               <div className="absolute right-0 h-full w-30 md:hidden">
-                <ul className="text-white mt-5 flex flex-col gap-3 ">
-                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Home</li>
-                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>About Me</li>
-                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Skills</li>
-                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Projects</li>
-                        <li className="nav-links" onClick={()=>{setMenuOpen(false)}}>Contact</li>
+                <div className="absolute right-0 h-full w-30 md:hidden">
+                    <ul className="text-white mt-5 flex flex-col gap-3 ">
+                        <li className="nav-links"
+                            onClick={
+                                () => {
+                                    setMenuOpen(false);
+                                    document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })
+                                }}>Home</li>
+                        <li className="nav-links"
+                            onClick={() => {
+                                setMenuOpen(false);
+                                document.getElementById('aboutme')?.scrollIntoView({ behavior: 'smooth' })
+                            }}>About Me</li>
+
+                        <li className="nav-links"
+                            onClick={() => {
+                                setMenuOpen(false);
+                                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+                            }}>Projects</li>
+                        <li className="nav-links"
+                            onClick={() => {
+                                setMenuOpen(false)
+                                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                            }}>Contact</li>
                     </ul>
-               </div>
+                </div>
             )}
         </>
     );

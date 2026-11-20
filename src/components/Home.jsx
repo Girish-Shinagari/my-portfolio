@@ -4,8 +4,8 @@ import hero_img from "../assets/hero_photo.png"
 
 function Home() {
     return (
-        <section className="w-full min-h-[calc(100svh-4.5rem)] overflow-hidden text-white">
-            <div className="mx-auto flex min-h-[calc(100svh-4.5rem)] max-w-7xl flex-col items-center justify-center gap-8 px-5 py-10 sm:px-8 md:flex-row md:gap-10 md:px-12 lg:gap-16 lg:px-16">
+        <section id="home" className="w-full h-full overflow-hidden text-white">
+            <div className="mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-8 px-5 py-10 sm:px-8 md:flex-row md:gap-10 md:px-12 lg:gap-16 lg:px-16">
                 <div className="order-2 w-full md:order-1 md:w-3/5 lg:w-1/2">
                     <p className="mb-2 text-lg font-medium sm:text-xl">Hi, I'm</p>
                     <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
