@@ -19,10 +19,10 @@ function Contact() {
 
             <div className="border border-white rounded-xl mt-5 p-5 text-white ">
                 <form action="submit" className="flex flex-col">
-                    <input type="text" value={name} placeholder="Enter your name" className="border border-white p-2 m-2 rounded-full" />
-                    <input type="text" placeholder="Phone number" className="border border-white p-2 m-2 rounded-full" />
-                    <input type="emial" placeholder="Email" className="border border-white p-2 m-2 rounded-full" />
-                    <input type="textarea" placeholder="massage" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="text" value='name' placeholder="Enter your name" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="text" value='number' placeholder="Phone number" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="emial" value='email' placeholder="Email" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="textarea" value='massage' placeholder="massage" className="border border-white p-2 m-2 rounded-full" />
                     <input type="submit" className="block mx-auto mt-4 border border-white p-2 rounded-full text-center" />
                 </form>
             </div>
