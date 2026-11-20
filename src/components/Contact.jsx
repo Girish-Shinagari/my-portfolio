@@ -10,19 +10,19 @@ function Contact() {
                     <p>Cell : <span className="font-thin">7676464403</span> </p>
 
                     <p>Email : <span className="font-thin text-sm">girishshinagari91@gmail.com</span> </p>
-                    <p>Github : <a href="https://github.com/Girish-Shinagari" className="font-thin text-sm">https://github.com/Girish-Shinagari</a> </p>
-                    <p>Linkedin : <a href="https://www.linkedin.com/in/girish-shinagari" className="font-thin text-sm">https://www.linkedin.com/in/girish-shinagari</a> </p>
+                    <p>Github : <a href="https://github.com/Girish-Shinagari" className="font-thin text-sm text-blue">https://github.com/Girish-Shinagari</a> </p>
+                    <p>Linkedin : <a href="https://www.linkedin.com/in/girish-shinagari" className="font-thin text-sm text-blue">https://www.linkedin.com/in/girish-shinagari</a> </p>
                     <p>Location : <span className="font-thin">Dharwad, Karnataka</span> </p>
 
                 </div>
             </div>
 
             <div className="border border-white rounded-xl mt-5 p-5 text-white ">
-                <form action="submit" className="flex flex-col">
-                    <input type="text" value='name' placeholder="Enter your name" className="border border-white p-2 m-2 rounded-full" />
-                    <input type="text" value='number' placeholder="Phone number" className="border border-white p-2 m-2 rounded-full" />
-                    <input type="emial" value='email' placeholder="Email" className="border border-white p-2 m-2 rounded-full" />
-                    <input type="textarea" value='massage' placeholder="massage" className="border border-white p-2 m-2 rounded-full" />
+                <form action="submit" className="flex flex-col" method="POST" data-netlify="true">
+                    <input type="text" name='name' placeholder="Enter your name" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="text" name='number' placeholder="Phone number" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="emial" name='email' placeholder="Email" className="border border-white p-2 m-2 rounded-full" />
+                    <input type="textarea" name='massage' placeholder="massage" className="border border-white p-2 m-2 rounded-full" />
                     <input type="submit" className="block mx-auto mt-4 border border-white p-2 rounded-full text-center" />
                 </form>
             </div>
