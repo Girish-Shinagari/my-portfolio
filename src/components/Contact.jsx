@@ -52,8 +52,8 @@ function Contact() {
                     {status === "error" && <p className="text-center mt-3 text-red-400">Something went wrong. Please try again.</p>}
                 </form>
             </div>
-<p className="font-thin text-center text-sm p-10">Designed & Built with React.js and Tailwind CSS</p>
-           </div>
+            <p className="font-thin text-center text-sm p-10">Designed & Built with React.js and Tailwind CSS</p>
+        </div>
     );
 }
 

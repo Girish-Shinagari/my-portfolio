@@ -13,7 +13,7 @@ function Projects() {
                     <div className=" mt-3 lg:mx-5">
                         <h4 className="text-[#38BDF8] ">Frontend & API</h4>
                         <p className="font-bold">My Movies — Movie Discovery & Search App</p>
-                        <p className="text-1sm mt-3">A responsive movie browsing web application that lets users search films in real time, explore trending titles, and inspect ratings, and synopses through a clean dark-themed interface.</p>
+                        <p className="text-1sm mt-3 font-thin">A responsive movie browsing web application that lets users search films in real time, explore trending titles, and inspect ratings, and synopses through a clean dark-themed interface.</p>
                         <h1 className="text-xl mt-5">Tech Stack :</h1>
                         <h1 className=" text-md">React.js | JavaScript(ES6) | HTML5 & CSS3 | vercel</h1>
                         <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -44,8 +44,8 @@ function Projects() {
 
             <div>
                 <p className="text-[#38BDF8] text-2md font-bold">My-Portfolio <span className="text-sm text-white font-thin">( it self )</span></p>
-                <p className="">A responsive, Portfolio built to showcase my software projects, technical skills, and educational background with clean UI components and smooth section navigation.</p>
-                <p>Built modular components in React.js and semantic HTML5. A Consistent Mobile-first responsive layouts with Tailwind CSS</p>
+                <p className="font-thin">A responsive, Portfolio built to showcase my software projects, technical skills, and educational background with clean UI components and smooth section navigation.</p>
+                <p className="font-thin">Built modular components in React.js and semantic HTML5. A Consistent Mobile-first responsive layouts with Tailwind CSS</p>
                 <div className="text-center mt-7 ">
                     <a
                         href="https://github.com/Girish-Shinagari/my-portfolio"
